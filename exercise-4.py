@@ -7,11 +7,24 @@
 #      b:
 #      c:
 
-triangle = input('Enter the lengths of three side of a triangle: a: b: c:').upper()
+
+a = int(input('Enter the lengths of three side of a triangle: a: '))
+b = int(input('b: '))
+c = int(input('c: '))
 
 # 2. Write the code that determines if the triangle is:
 #      equalateral - all three sides are equal in length
 #      scalene - all three sides are unequal in length
 #      isosceles - two sides are the same length
+
+if a == b and a == c and b == c: 
+    print(f'A triangle with sides of {a}, {b} & {c} is a equalateral triangle')
+elif a != b and a != c and b != c:
+    print(f'A triangle with sides of {a}, {b} & {c} is a scalene triangle')
+elif a == b or a == c or b == c: 
+    print(f'A triangle with sides of {a}, {b} & {c} is a isosceles triangle')
+
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
+
+# python3 exercise-4.py
