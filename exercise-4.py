@@ -6,6 +6,9 @@
 #      a: 
 #      b:
 #      c:
+
+triangle = input('Enter the lengths of three side of a triangle: a: b: c:').upper()
+
 # 2. Write the code that determines if the triangle is:
 #      equalateral - all three sides are equal in length
 #      scalene - all three sides are unequal in length
