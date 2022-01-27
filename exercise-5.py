@@ -3,6 +3,18 @@
 # Write the code that:
 # 1. Calculates and prints the first 50 terms of the fibonacci sequence.
 
+term = 0
+first_number = 0
+second_number = 1
+while term < 50:
+  if term < 2:
+    print(f'term: {term} / number: {term}')
+  else:
+    num = first_number + second_number
+    print(f'term: {term} / number: {num}')
+    first_number = second_number
+    second_number = num
+  term += 1
 
 
 # 2. Print each term and number as follows:
